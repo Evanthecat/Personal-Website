@@ -7,7 +7,24 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div id="scroll-container">
+    <div class="navbar">
+        <button class="navbar-button" onclick="document.querySelector('.scroll-container').scrollIntoView({behavior: 'smooth'});">
+            Home
+        </button>
+        <button class="navbar-button" onclick="document.querySelector('#facts-section').scrollIntoView({behavior: 'smooth'});">
+            Fun Facts
+        </button>
+        <button class="navbar-button" onclick="document.querySelector('#news-container').scrollIntoView({behavior: 'smooth'});">
+            News
+        </button>
+        <button class="navbar-button" onclick="document.querySelector('#projects-section').scrollIntoView({behavior: 'smooth'});">
+            Projects
+        </button>
+        <button class="navbar-button" onclick="document.querySelector('#contact-title').scrollIntoView({behavior: 'smooth'});">
+            Contact
+        </button>
+    </div>
+    <div class="scroll-container">
         <h1 id="big-title">Evan</h1>
         <div id="description-container">
             <h2>About Me</h2>
@@ -16,62 +33,65 @@
 
         <div class="separater"></div>
 
-        <h1>Fun Facts</h1>
-        <div id="facts-container">
-            <div class="fact-container">
-                <img src="Milk.jpg" class="fact-icon">
-                <div>
-                    <b>Favorite Drinks</b><br>
-                    <ul>
-                        <li>Eggnog (the safe kind)</li>
-                        <li>Milk</li>
-                        <li>Mango Nectar Juice</li>
-                    </ul>
+        <div id="facts-section">
+            <div id="facts-container">
+                <h1>Fun Facts</h1>
+                <div class="fact-container">
+                    <img src="assets/Milk.jpg" class="fact-icon">
+                    <div>
+                        <b>Favorite Drinks</b><br>
+                        <ul>
+                            <li>Eggnog (the safe kind)</li>
+                            <li>Milk</li>
+                            <li>Mango Nectar Juice</li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-            <div class="fact-container">
-                <img src="Popcorn.svg" class="fact-icon">
-                <div>
-                    <b>Favorite Movies</b><br>
-                    <ul>
-                        <li>Interstellar</li>
-                        <li>The Truman Show</li>
-                        <li>Etc.</li>
-                    </ul>
+                <div class="fact-container">
+                    <img src="assets/Popcorn.svg" class="fact-icon">
+                    <div>
+                        <b>Favorite Movies</b><br>
+                        <ul>
+                            <li>Interstellar</li>
+                            <li>The Truman Show</li>
+                            <li>Etc.</li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-            <div class="fact-container">
-                <img src="TV.svg" class="fact-icon">
-                <div>
-                    <b>Favorite Shows</b><br>
-                    <ul>
-                        <li>The Owl House</li>
-                        <li>Gravity Falls</li>
-                    </ul>
+                <div class="fact-container">
+                    <img src="assets/TV.svg" class="fact-icon">
+                    <div>
+                        <b>Favorite Shows</b><br>
+                        <ul>
+                            <li>The Owl House</li>
+                            <li>Gravity Falls</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
+        
         <div class="separater"></div>
         <div id="news-background">
             <div id="news-container">
                 <h1>Current News</h1>
                 <div id="facts-container">
                     <div class="fact-container">
-                        <img src="Hammer.jpg" class="fact-icon">
+                        <img src="assets/Hammer.jpg" class="fact-icon">
                         <div>
                             <b>Working On</b><br>
                             More HackClub projects!
                         </div>
                     </div>
                     <div class="fact-container">
-                        <img src="Book.jpg" class="fact-icon">
+                        <img src="assets/Book.jpg" class="fact-icon">
                         <div>
                             <b>Last Book Read</b><br>
                             The Long-Lived King
                         </div>
                     </div>
                     <div class="fact-container">
-                        <img src="TV.jpg" class="fact-icon">
+                        <img src="assets/TV.jpg" class="fact-icon">
                         <div>
                             <b>Current YouTube Channel Watching</b><br>
                             JudeLow
@@ -81,60 +101,63 @@
             </div>
         </div>
         <div class="separater"></div>
-        <h1>Projects</h1>
-        <div id="projects-container">
-            <a class="link" href="https://github.com/Evanthecat/DanceDanceRevolutionPad">
-                <div class="project-card">
-                    <img class="project-thumbnail" src="HackPad.png">
-                    <span class="project-title">DanceDanceRevolutionPad</span>
+        <div id="projects-section">
+            <div id="projects-section-inner">
+                <h1>Projects</h1>
+                <div id="projects-container">
+                    <a class="link" href="https://github.com/Evanthecat/DanceDanceRevolutionPad">
+                        <div class="project-card">
+                            <img class="project-thumbnail" src="assets/HackPad.png">
+                            <span class="project-title">DanceDanceRevolutionPad</span>
+                        </div>
+                    </a>
+                    <a class="link" href="https://github.com/Evanthecat/Delete-Account-Shenanigans">
+                        <div class="project-card">
+                            <img class="project-thumbnail" src="assets/Shenanigans.png">
+                            <span class="project-title">Delete Account Shenanigans</span>
+                        </div>
+                    </a>
                 </div>
-            </a>
-            <a class="link" href="https://github.com/Evanthecat/Delete-Account-Shenanigans">
-                <div class="project-card">
-                    <img class="project-thumbnail" src="Shenanigans.png">
-                    <span class="project-title">Delete Account Shenanigans</span>
-                </div>
-            </a>
+            </div>
         </div>
-        </ul>
 
         <div class="separater"></div>
 
         <h1>Other Hobbies</h1>
         <div id="hobbies-container">
-            <a class="link">
+            <a class="link" href="programming.html">
                 <div class="hobbies-inner-container">
-                    <img src="mandelbrot.png" class="hobbies-icon">
+                    <img src="assets/mandelbrot.png" class="hobbies-icon">
                     <span class="project-title">Programming</span>
                 </div>
             </a>
-            <a class="link">
+            <a class="link" href="voiceacting.html">
                 <div class="hobbies-inner-container">
-                    <img src="Microphone.jpg" class="hobbies-icon">
+                    <img src="assets/Microphone.jpg" class="hobbies-icon">
                     <span class="project-title">Voice Acting</span>
                 </div>
             </a>
-            <a class="link">
+            <a class="link" href="3dmodeling.html">
                 <div class="hobbies-inner-container">
-                    <img src="Modeling.png" class="hobbies-icon">
+                    <img src="assets/Modeling.png" class="hobbies-icon">
                     <span class="project-title">3D Modeling</span>
                 </div>
             </a>
-            <a class="link">
+            <a class="link" href="videogames.html">
                 <div class="hobbies-inner-container">
-                    <img src="Videogames.jpg" class="hobbies-icon">
+                    <img src="assets/Videogames.jpg" class="hobbies-icon">
                     <span class="project-title">Video Games</span>
                 </div>
             </a>
-            <a class="link">
+            <a class="link" href="music.html">
                 <div class="hobbies-inner-container">
-                    <img src="Violin.jpg" class="hobbies-icon">
+                    <img src="assets/Violin.jpg" class="hobbies-icon">
                     <span class="project-title">Music</span>
                 </div>
             </a>
-            <a class="link">
+            <a class="link" href="art.html">
                 <div class="hobbies-inner-container">
-                    <img src="mandelbrot.png" class="hobbies-icon">
+                    <img src="assets/mandelbrot.png" class="hobbies-icon">
                     <span class="project-title">Art</span>
                 </div>
             </a>
@@ -145,7 +168,7 @@
 
         <div class="separater"></div>
 
-        <h1>Contact</h1>
+        <h1 id="contact-title">Contact</h1>
             <a href="https://github.com/Evanthecat">My Github</a>
     </div>
 </body>
