@@ -156,3 +156,11 @@ body {
 #projects-section-inner {
     padding: 40px;
 }
+
+.section {
+    padding: 40px;
+}
+
+.image {
+    width: 500px;
+}

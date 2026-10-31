@@ -7,6 +7,74 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="navbar">
+        <a class="navbar-button link" href="index.html">
+            Home
+        </a>
+        <button class="navbar-button" onclick="document.querySelector('#tutorial-title').scrollIntoView({behavior: 'smooth', block: 'center'});">
+            Tutorial Work
+        </button>
+        <button class="navbar-button" onclick="document.querySelector('#personal-work-title').scrollIntoView({behavior: 'smooth', block: 'center'});">
+            Personal Work
+        </button>
+        <button class="navbar-button" onclick="document.querySelector('#books-title').scrollIntoView({behavior: 'smooth', block: 'center'});">
+            Books
+        </button>
+    </div>
     
+    <div class="scroll-container">
+        <div class="section">
+            <h1>3D Modeling</h1>
+            <h2 id="tutorial-title">Tutorial Work</h2>
+            <p>I've been 3D modeling (specifically using Blender) probably as long as I've been programming. In most of my years of learning Blender, I've been mostly using tutorials. The image below is of a warehouse scene that I made from a tutorial.</p>
+            <img src="assets/blender1.png" class="image">
+
+            <p>And this black hole.</p>
+            <img src="assets/blender2.png" class="image">
+
+            <p>And this model of Earth.</p>
+            <img src="assets/blender3.png" class="image">
+
+            <h2 id="personal-work-title">Personal Work</h2>
+
+            <p>This is the topology of the Heckler and Koch model that I made in middle school.</p>
+            <img src="assets/hecklernkoch.png" class="image">
+
+            <p>And this is the Lovecraftian horror beyond human comprehension (every new Blender user makes one of them).</p>
+            <img src="assets/Thing beyond comprehension.png" class="image">
+
+            <p>Here are images of independent work that I did during my free time in classes.</p>
+            <img src="assets/Watch.png" class="image">
+            <img src="assets/Submarine.png" class="image">
+            <img src="assets/Bottles.png" class="image">
+            <img src="assets/Piano.png" class="image">
+            <img src="assets/Cat.png" class="image">
+            <p>The submarine one was for a Robotics impact presentation, but the entire script had to be discarded last minute (including my work). The cat one is a model of "Coder Cat" a recurring stuffed animal that is pretty much to mascot of the programming subteam on my Robotics team.</p>
+
+            <h2 id="books-title">Books</h2>
+            <p>Recently, I've been trying to learn more of the fundamentals of Blender and 3D art, which seem to be lacking in many Blender tutorials.</p>
+
+            <p>So far, the only good books for Blender that I've found are listed below:</p>
+            <ul>
+                <li>The Pushing Points Topology Workbook: Volume 01</li>
+                <li>The Pushing Points Topology Workbook: Volume 02</li>
+                <li>Digital Modeling</li>
+                <li>Squeaky Clean Topology in Blender</li>
+                <li>Chris Brejon's CG Cinematography</li>
+                <li>Illuminated Pixels: The Why, What, and How of Digital Lighting</li>
+                <li>Sculpting the Blender Way by Xury Greer</li>
+            </ul>
+
+            <p>The only one that I've finished so far is the first one, so I can only vouch for that book's quality, but the other ones seem good too on first glance.</p>
+            <p>Sadly, many Blender books are formatted as "step by step" projects, which by personal experience are not very effective (one of the things that I look out for in a book is the number of exercises). I've also been trying to find more software agonistic books, which seem to be better quality (note that at least the first, second, and fifth books in the list are software agonistic).</p>
+
+            <p>By learning in this way, I hope to learn better practices and more more cool stuff in the future!</p>
+            <p>Below are pictures of some exercises from the first book. The letters and numbers exercise took me over a month, but it was worth it!</p>
+            <img src="assets/Ear.png" class="image">
+            <img src="assets/Numbers.png" class="image">
+
+
+        </div>
+    </div>
 </body>
 </html>

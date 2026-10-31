@@ -7,10 +7,123 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="navbar">
+        <a class="navbar-button link" href="index.html">
+            Home
+        </a>
+        <button class="navbar-button" onclick="document.querySelector('#first-projects-title').scrollIntoView({behavior: 'smooth', block: 'center'});">
+            First Projects
+        </button>
+        <button class="navbar-button" onclick="document.querySelector('#games-title').scrollIntoView({behavior: 'smooth', block: 'center'});">
+            3D Games
+        </button>
+        <button class="navbar-button" onclick="document.querySelector('#unity-title').scrollIntoView({behavior: 'smooth', block: 'center'});">
+            Unity
+        </button>
+        <button class="navbar-button" onclick="document.querySelector('#recent-title').scrollIntoView({behavior: 'smooth', block: 'center'});">
+            Recent Projects
+        </button>
+    </div>
     <div class="scroll-container">
-        <h1>Programming</h1>
+        <div class="section">
+            <h1>Programming</h1>
 
-        <p>I've been programming since 5th grade.</p>
+            <p>In this section, I wanted to detail some of my older projects along with some more recent projects that I've been working on.</p>
+
+            <h2 id="first-projects-title">First Projects</h2>
+
+            <p>The first projects that I made were .bat terminal games and simple games on scratch. Sadly, since my .bat files died with my old laptop, and my scratch account is inaccessible due to my email getting hacked a few years ago, I won't be able to showcase them here.</p>
+
+            <p>My first big project was probably this game called "Rickroll Simulator."</p>
+            <img src="assets/rickrollsimulator.png" class="image">
+
+            <p>While my friend and I were attending a summer camp together, he joked that I should turn rick-rolling (a recently popular trolling method) into a game. I took the suggestion seriously and made this: a game about checking your email and dodging rickrolls.</p>
+            <p>It features an email panel to the left with a giant "It's a RICKROLL" button if you suspect the email is trying to rickroll you. To the right, there are these "rickroll detectors," which get used up when you click on them and display the rickroll status of the current email in the terminal (in the bottom right). The terminal also featured some simple commands and debugging features for testing the game.</p>
+            <img src="assets/rickrollsimulator_warped.png" class="image">
+            <p>However, I didn't really know much about mobile-responsive websites at the time, so the entire website kind of breaks if you use any sort of different screen size.</p>
+
+            <p>After making this game, I created a few more websites, slowly learning more about HTML, CSS, and JavaScript.</p>
+            <p>For example, this is a simple stopwatch that I made using .hta files.</p>
+            <img src="assets/stopwatch.png" class="image">
+
+            <p>And this is a chess website that I made with a chess JS library and a background that I made in Blender. The table was a free asset that I downloaded and the donuts were from the famous Donut Tutorial by Blender Guru. I just used a physics simulation to scatter them.</p>
+            <img src="assets/chess.png" class="image">
+
+            <p>I also followed a few tutorials to make simple functional apps, like this ToDo list app.</p>
+            <img src="assets/todo.png" class="image">
+
+            <h2 id="games-title">3D Games</h2>
+            <p>As I transitioned into middle school, I started experimenting with making games with THREE.js and CANNON.js</p>
+
+            <p>Below is a simple procedural game that I made using these libraries.</p>
+            <img src="assets/game1.png" class="image">
+
+            <p>I also started experimenting with cubemaps in the background.</p>
+            <img src="assets/cubemap.png" class="image">
+
+            <p>This is a simple parkour course that I made as a game concept. For some reason, CANNON.js kept having a bug where the player would bounce high into the air. At the time, I wasn't able to get it to work well, but I might revisit the original game idea in the future!</p>
+            <img src="assets/game2.png" class="image">
+
+            <p>The last project that I have from this era was this demo portal scene. I designed the tile level in Blender and imported the assets as .glb files. At the time, I think I was experimenting with the CANNON.js physics and getting the portals to teleport the player.</p>
+            <img src="assets/game3.png" class="image">
+
+            <p>Although I still worked with websites sometimes (shown below is a file management project that I coded before realizing that web browsers are sandboxed), I was moving toward using game engines at this time.</p>
+            <img src="assets/directory.png" class="image">
+
+            <h2 id="unity-title">Unity</h2>
+
+            <p>One of the first games that I made with Unity was this swimming-themed typing game.</p>
+            <img src="assets/swimming.png" class="image">
+            <p>If you finished typing in time, the game would continue, but if you ran out of time, you would get a results screen shown below.</p>
+            <img src="assets/results.png" class="image">
+
+            <p>At the time, I was watching a lot of DaniDev and tried to make a similar demo game on my own. I made this level in the Unity editor and actually modeled the Heckler and Koch model in Blender.</p>
+            <img src="assets/game4.png" class="image">
+
+            <p>In this demo, I was experimenting with Unity's different graphics settings, although the use of these high settings significantly slowed down performance.</p>
+            <img src="assets/game5.png" class="image">
+
+            <p>The most recent Unity demo that I could find is shown in the image below.</p>
+            <img src="assets/game6.png" class="image">
+
+            <p>Although I remember making more, I couldn't find any other files in my laptop's hard drive or in my various USB drives. After Unity, I tried to migrate to Unreal Engine (because of Unity's pay per pay scandal), but didn't do much with the engine because of its performance cost.</p>
+            <p>During this period, school was taking up more and more of my time, so it would be a while before I made more projects.</p>
+
+            <h2 id="recent-title">Recent Projects</h2>
+            <p>During my freshmen year of high school, I started taking CS50 courses. I thought that some of my final projects would be notable to share here (without the code, of course).</p>
+            <p>This was my final project for CS50x. It's a colliding box simulator, inspired by a video from 3Blue1Brown. The idea was that boxes with specific ratios would compute pi in the amount of collisions between the two boxes.</p>
+            <img src="assets/final1.png" class="image">
+
+            <p>My final project for CS50P was a physics-based gravity game. The red circles repulse the player (the black circle) and the blue ones attract it. The goal of the game was to get the player to the green circle (the goal).</p>
+            <img src="assets/final2.png" class="image">
+
+            <p>For my CS50 Web final project, I made a course builder. The owner of a course could add or delete elements from a course, and I even added a node system for custom logic.</p>
+            <img src="assets/final3.png" class="image">
+            <img src="assets/final4.png" class="image">
+            <img src="assets/final5.png" class="image">
+
+            <p>More recently, I've made a few smaller projects.</p>
+            <p>This is a Mandlebrot set that I rendered with a custom Python script. It technecally supports generating images with Perturbation Theory, but my renderer isn't optimized enough for that to be remotely useful (it does make the output look weird though!).</p>
+            <img src="assets/mandelbrot.png" class="image">
+
+            <p>I've also messed around with web scraping, although I haven't found much use for it in my projects.</p>
+            <img src="assets/scraper.png" class="image">
+
+            <p>Over the summer of my rising junior year, I read a few books about OpenGL, raytracing, and general programming techniques.</p>
+            <ul>
+                <li><a href="https://paroj.github.io/gltut/">OpenGL Book</a></li>
+                <li><a href="https://github.com/RayTracing/raytracing.github.io">Ray Tracing Book</a></li>
+                <li><a href="https://www.pbr-book.org/">PBR Book</a></li>
+                <li>Design Patterns: Elements of Reusable Object-Oriented Software</li>
+            </ul>
+
+            <p>Here's a render that I did from <i>Ray Tracing in One Weekend</i>.</p>
+
+            <img src="assets/render.png" class="image">
+
+            <p>For future projects, I want to implement a fluid solver from <a href="https://cgweb.informatik.uni-freiburg.de/intern/seminar/gridFluids_fluid_flow_for_the_rest_of_us.pdf"><i>Fluid Flow for the Rest of Us</i></a> and do more HackClub related projects. I also have plans for improving my course builder idea and making an image to sheet music software.</p>
+
+        </div>
     </div>
 </body>
 </html>
